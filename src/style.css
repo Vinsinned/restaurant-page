@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap');
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    color: #FFCB47;
+}
+#special-paragraph {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}
+body {
+    background-color: black;
+}
+#content {
+    text-align: center;
+    width: 750px;
+    margin: auto;
+}
+#george-washington {
+    border-radius: 100%;
+    margin-top: 20px;
+    height: 200px;
+}
+p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+footer p {
+    color: #FFCB47;
+    font-weight: bold;
+}
+a {
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+a:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    color: #FFCB47;
+    text-decoration: underline;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+#current {
+    color: #FFCB47;
+}
+.image-left {
+    float: left;
+    height: 200px;
+}
+.image-right {
+    float: right;
+    height: 200px;
+}
+.menu {
+    height: 200px;
+    margin-bottom: 50px;
+}
+.food-item {
+    font-size: 30px;
+    color: #FFCB47;
+}
+#menu-footer {
+    width: 100%;
+    border-top: 1px solid #FFCB47;
+}

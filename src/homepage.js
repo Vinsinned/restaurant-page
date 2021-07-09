@@ -3,15 +3,6 @@ import "./style.css";
 function introduction() {
     let content = document.querySelector('#content');
 
-    let nav = document.createElement('nav');
-    let homepage = document.createElement('a');
-    let menu = document.createElement('a');
-    let contact = document.createElement('a');
-    homepage.textContent = 'Home';
-    homepage.id = 'current';
-    menu.textContent = 'Menu';
-    contact.textContent = 'Contact';
-
     let header = document.createElement('h1');
     let specialPara = document.createElement('p');
     let image = document.createElement('img');
@@ -38,11 +29,6 @@ function introduction() {
     let chefName = document.createElement('p');
     signature.textContent = 'Signed, The Founding Fathers';
     chefName.textContent = 'Executive Chef: John Smith';
-
-    content.appendChild(nav);
-    nav.appendChild(homepage);
-    nav.appendChild(menu);
-    nav.appendChild(contact);
     content.appendChild(header);
     content.appendChild(specialPara);
     content.appendChild(image);

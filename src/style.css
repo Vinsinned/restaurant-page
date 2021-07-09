@@ -78,3 +78,11 @@ nav {
     width: 100%;
     border-top: 1px solid #FFCB47;
 }
+#white-house {
+    height: 500px;
+    border-radius: 20px;
+}
+#location {
+    font-size: 30px;
+    font-weight: bold;
+}

@@ -3,20 +3,6 @@ import "./style.css";
 function menu() {
     let content = document.querySelector('#content');
 
-    let nav = document.createElement('nav');
-    let homepage = document.createElement('a');
-    let menu = document.createElement('a');
-    let contact = document.createElement('a');
-    homepage.textContent = 'Home';
-    menu.id = 'current';
-    menu.textContent = 'Menu';
-    contact.textContent = 'Contact';
-
-    content.appendChild(nav);
-    nav.appendChild(homepage);
-    nav.appendChild(menu);
-    nav.appendChild(contact);
-
     let header = document.createElement('h1');
     let specialPara = document.createElement('p');
     header.textContent = 'Menu';

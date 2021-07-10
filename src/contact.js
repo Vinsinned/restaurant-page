@@ -3,11 +3,6 @@ import './style.css';
 function contact() {
     let content = document.querySelector('#content');
 
-    content.appendChild(nav);
-    nav.appendChild(homepage);
-    nav.appendChild(menu);
-    nav.appendChild(contact);
-
     let header = document.createElement('h1');
     let note = document.createElement('p');
     let location = document.createElement('p');

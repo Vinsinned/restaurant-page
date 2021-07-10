@@ -10,16 +10,44 @@ navHomepage.textContent = 'Home';
 navMenu.textContent = 'Menu';
 navContact.textContent = 'Contact';
 
-content.appendChild(nav);
-nav.appendChild(navHomepage);
-nav.appendChild(navMenu);
-nav.appendChild(navContact);
+function createNav() {
+    content.appendChild(nav);
+    nav.appendChild(navHomepage);
+    nav.appendChild(navMenu);
+    nav.appendChild(navContact);
+}
+
+createNav();
+navHomepage.classList.add('current');
 
 let navLinks = document.querySelectorAll('a');
 
 navLinks.forEach((link) => {
     link.addEventListener('click', () => {
-        console.log('0')
+        if (!link.classList.contains('current')) {
+            if (link.textContent == 'Home') {
+                content.innerHTML = '';
+                createNav();
+                introduction();
+                navHomepage.className = 'current';
+                navMenu.className = '';
+                navContact.className = '';
+            } else if (link.textContent == 'Menu') {
+                content.innerHTML = '';
+                createNav();
+                menu();
+                navHomepage.className = '';
+                navMenu.className = 'current';
+                navContact.className = '';
+            } else if (link.textContent == 'Contact') {
+                content.innerHTML = '';
+                createNav();
+                contact();
+                navHomepage.className = '';
+                navMenu.className = '';
+                navContact.className = 'current';
+            }
+        }
     })
 })
 introduction();
